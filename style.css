@@ -63,6 +63,7 @@ nav {
 .class02 {
     max-width: 1440px;
     margin: 0 auto;
+    
 }
 
 .class02 .container {
@@ -102,9 +103,17 @@ nav {
 }
 
 
+/* styles for class04 */
 
+.class04 {
+    max-width: 1440px;
+    margin: 0 auto;
+}
 
-
+.class04 .container {
+    max-width: 1140px;
+    width: 100%;
+}
 
 
 
@@ -150,8 +159,9 @@ nav {
 
     .class02 .container {
         flex-direction: column-reverse;
-        align-items: center;
+        align-items: flex-start;
         gap: 28px;
+        padding: 0 20px;
     }
     .class02 h1 {
         font-size: 24px;
@@ -159,6 +169,8 @@ nav {
     }
     .class02 p {
         font-size: 14px;
+        width: 100%;
+        text-align: justify;
     }
 
 
