@@ -63,7 +63,7 @@ nav {
 .class02 {
     max-width: 1440px;
     margin: 0 auto;
-    
+
 }
 
 .class02 .container {
@@ -75,7 +75,7 @@ nav {
     align-items: flex-end;
 }
 
-.class02 h1{
+.class02 h1 {
     font-size: 65px;
     font-weight: bold;
     line-height: 1.2;
@@ -100,6 +100,7 @@ nav {
 .class03 .container {
     max-width: 1140px;
     width: 100%;
+    margin: 0 auto;
 }
 
 
@@ -117,11 +118,48 @@ nav {
 
 
 
+.class05 .img-container {
+    margin-top: 120px;
+}
 
+.img-container {
+    display: grid;
+    
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "img1 img3"
+        "img2 img3";
+    gap: 25px;
+    height: 423px;
+    
+}
+.img-1 {
+            grid-area: img1;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: relative;
+            border-radius: 10px;
+        }
 
+.img-2 {
+            grid-area: img2;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: relative;
+            border-radius: 10px;
+        }
 
-
-
+.img-3 {
+            grid-area: img3;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: relative;
+            border-radius: 10px;
+        }
 
 
 
@@ -138,22 +176,26 @@ nav {
 
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
-    
-   .class01{
+
+    .class01 {
         margin-bottom: 28px;
-        
+
     }
+
     .nav-link li {
         display: none;
     }
+
     .nav-link ul {
         justify-content: space-evenly;
     }
+
     .cart {
-        margin-left: auto; 
+        margin-left: auto;
     }
+
     .img-logo img {
-        width: 63px; 
+        width: 63px;
     }
 
 
@@ -163,10 +205,12 @@ nav {
         gap: 28px;
         padding: 0 20px;
     }
+
     .class02 h1 {
         font-size: 24px;
         margin-bottom: 13px;
     }
+
     .class02 p {
         font-size: 14px;
         width: 100%;
@@ -175,7 +219,23 @@ nav {
 
 
 
+    
 
+    
+   
+/* styles for class05 */
+
+    .class05 .img-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        margin-top: 51px;
+        padding: 0 20px;
+        grid-template-areas:
+            "img1"
+            "img2"
+            "img3";
+        gap: 20px;
+    }
 
 
 
