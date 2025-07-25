@@ -108,10 +108,44 @@ nav {
 }
 
 .class03 .container {
+    text-align: center;
+    margin: 0px auto;
     max-width: 1140px;
-    width: 100%;
-    margin: 0 auto;
+    margin-top: 120px;
 }
+
+.class03 p {
+    font-weight: 400;
+    max-width: 680px;
+    margin: 0px auto;
+    margin-bottom: 15px;
+}
+
+.class03 button {
+    background: rgb(233, 90, 8);
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 1.2rem 2.5rem;
+    border: none;
+    border-radius: 3px;
+}
+
+
+.class03 .card-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1px;
+        max-width: 270px;
+        width: 100%;
+        border-radius: 5px;
+        box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+        padding: 15px;
+        background-color: rgb(255, 255, 255);
+        margin-top: 49px;
+    }
 
 
 /* styles for class04 */
@@ -124,21 +158,23 @@ nav {
 .class04 .container {
     max-width: 1140px;
 }
-.class04 .img{
-     max-width: 540px;
-  position: relative;
+
+.class04 .img {
+    max-width: 540px;
+    position: relative;
 }
 
-.class04 .image-1{
+.class04 .image-1 {
     width: 100%;
-  position: static;
+    position: static;
 }
-.class04 .image-2{
+
+.class04 .image-2 {
     width: 60%;
-  position: absolute;
-  right: -20%;
-  bottom: 70%;
-  
+    position: absolute;
+    right: -20%;
+    bottom: 70%;
+
 }
 
 
@@ -367,45 +403,54 @@ nav {
         width: 63px;
     }
 
-   
+    /* styles for class02 */
+
     .class02 .container {
         flex-direction: column-reverse;
-        align-items: flex-start;
-        gap: 28px;
-        padding: 0 20px;
+
+    }
+
+    .class02 .content {
+        padding-top: 28px;
+        padding-left: 5px;
+
     }
 
     .class02 h1 {
-        font-size: 24px;
-        margin-bottom: 13px;
+        font-size: 1.2rem;
     }
 
     .class02 p {
-        font-size: 14px;
-        width: 100%;
-        text-align: justify;
+        font-size: 0.9rem;
     }
+
+    .class02 .image-container {
+        padding-top: 30px;
+    }
+
+    /* styles for class03 */
+
+    .class03 p {
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+
+    .class03 button {
+        font-size: 0.9rem;
+        padding: 12px 0px;
+    }
+
+    
+
+
+
+
 
     /* styles for class04 */
 
-    .class04 .image-2{
+    .class04 .image-2 {
         display: none;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     /* styles for class05 */
 
@@ -474,7 +519,7 @@ nav {
         flex-direction: column;
         padding-left: 20px;
         gap: 20px;
-        
+
     }
 
     .logo-link {
