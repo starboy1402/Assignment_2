@@ -123,8 +123,26 @@ nav {
 
 .class04 .container {
     max-width: 1140px;
-    width: 100%;
 }
+.class04 .img{
+     max-width: 540px;
+  position: relative;
+}
+
+.class04 .image-1{
+    width: 100%;
+  position: static;
+}
+.class04 .image-2{
+    width: 60%;
+  position: absolute;
+  right: -20%;
+  bottom: 70%;
+  
+}
+
+
+
 
 
 /* styles for class05 */
@@ -223,11 +241,12 @@ nav {
 
 /* styles for class06 */
 .class06 {
-    max-width: 1440px;
+    max-width: 1140px;
     height: 553px;
     background-image: linear-gradient(rgba(70, 72, 73, 0.4)),
         url(./assets/news-letter-bg.png);
     background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -256,7 +275,7 @@ nav {
     font-weight: 400;
     padding-left: 50px;
     width: 644px;
-    max-height: 50px;
+    height: 50px;
     border: none;
 }
 
@@ -273,14 +292,59 @@ nav {
 
 }
 
+/* styles for class07 */
 
+.class07 {
+    max-width: 1440px;
+    margin: 0 auto;
 
+}
 
+.footer-container {
+    max-width: 1140px;
+    max-height: 250px;
+    margin: 0px auto;
 
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 70px;
+    position: relative;
+}
+
+.footer-container1 p {
+    padding-top: 15px;
+}
+
+.footer-container2 ul,
+.footer-container3 ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.footer-container-div-2 ul li a,
+.footer-container-div-3 ul li a {
+    font-size: 1rem;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.footer-container2 ul li a:hover,
+.footer-container3 ul li a:hover {
+    text-decoration: underline;
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
 
 
 /* Mobile Responsiveness */
-@media (max-width: 768px) {
+@media screen and (max-width: 576px) {
 
     .class01 {
         margin-bottom: 28px;
@@ -303,7 +367,7 @@ nav {
         width: 63px;
     }
 
-
+   
     .class02 .container {
         flex-direction: column-reverse;
         align-items: flex-start;
@@ -321,6 +385,21 @@ nav {
         width: 100%;
         text-align: justify;
     }
+
+    /* styles for class04 */
+
+    .class04 .image-2{
+        display: none;
+    }
+
+
+
+
+
+
+
+
+
 
 
 
@@ -367,21 +446,43 @@ nav {
         margin-left: 0px;
         margin-right: 0px;
     }
+
     .class06 h1 {
-        font-size:  1.1rem;
+        font-size: 1.1rem;
         text-align: center;
     }
-    .class06 .email{
-    padding : 0.5rem 1rem;
-    width: 218px;
-    max-height: 40px;
-    margin-right: 0px;
+
+    .class06 .email {
+        padding: 0.5rem 1rem;
+        width: 218px;
+        max-height: 40px;
+        margin-right: 0px;
     }
+
     .class06 .btn {
         width: 100px;
         max-height: 40px;
         margin: 0px;
     }
+
+
+    /* class 07 styles */
+    .footer-container {
+        max-height: 765px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        flex-direction: column;
+        padding-left: 20px;
+        gap: 20px;
+        
+    }
+
+    .logo-link {
+        max-width: 216px;
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+
 
 
 
