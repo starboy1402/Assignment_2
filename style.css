@@ -244,7 +244,7 @@ nav {
 
 .bloom {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4)),
-        url("../assets/deal-bloom.png");
+        url("./assets/deal-bloom.png");
     background-repeat: no-repeat;
     max-width: 366px;
     height: 200px;
@@ -254,7 +254,7 @@ nav {
 
 .zabo {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4)),
-        url("../assets/deal-zabo.png");
+        url("./assets/deal-zabo.png");
     background-repeat: no-repeat;
     max-width: 750px;
     height: 410px;
@@ -266,7 +266,7 @@ nav {
 
 .ana {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4)),
-        url("../assets/deal-ana.png");
+        url("./assets/deal-ana.png");
     background-repeat: no-repeat;
     max-width: 366px;
     height: 198px;
