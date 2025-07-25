@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.font-Inter {
+    font-family: 'Inter', sans-serif;
+}
+
+
+
+
+/* styles for class01 */
+.class01 {
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-bottom: 120px;
+}
+
+/* nav styles */
+nav {
+    max-width: 1140px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.img-logo img {
+    max-width: 100%;
+    height: auto;
+    width: 135px;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+}
+
+.nav-link ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 48px;
+}
+
+.nav-link li {
+    margin: 0 15px;
+}
+
+.cart {
+    display: flex;
+    align-items: center;
+    gap: 1px;
+}
+
+
+/*section -02 styles */
+
+
+.class02 {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.class02 .container {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.class02 h1{
+    font-size: 65px;
+    font-weight: bold;
+    line-height: 1.2;
+    font-family: "Noto Serif", serif;
+}
+
+.class02 p {
+    font-size: 22px;
+    line-height: 1.2;
+    color: #666;
+    margin-top: 20px;
+}
+
+
+
+/* styles for class03 */
+.class03 {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.class03 .container {
+    max-width: 1140px;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    
+   .class01{
+        margin-bottom: 28px;
+        
+    }
+    .nav-link li {
+        display: none;
+    }
+    .nav-link ul {
+        justify-content: space-evenly;
+    }
+    .cart {
+        margin-left: auto; 
+    }
+    .img-logo img {
+        width: 63px; 
+    }
+
+
+    .class02 .container {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 28px;
+    }
+    .class02 h1 {
+        font-size: 24px;
+        margin-bottom: 13px;
+    }
+    .class02 p {
+        font-size: 14px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
